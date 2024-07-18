@@ -1,0 +1,32 @@
+etl_pipeline/
+├── assets/
+│   ├── bronze_layer.py
+│   ├── silver_layer.py
+│   ├── gold_layer.py
+│   └── __init__.py
+├── resources/
+│   ├── minio_io_manager.py
+│   ├── mysql_io_manager.py
+│   └── psql_io_manager.py
+└── __init__.py
+
+
+etl_pipeline/
+├── Dockerfile
+├── requirements.txt
+├── setup.py
+├── etl_pipeline/
+│   ├── __init__.py
+│   ├── assets/
+│   │   ├── __init__.py
+│   │   ├── bronze_layer.py
+│   │   ├── silver_layer.py
+│   │   └── gold_layer.py
+│   └── resources/
+│       ├── __init__.py
+│       ├── minio_io_manager.py
+│       ├── mysql_io_manager.py
+│       └── psql_io_manager.py
+└── dagster_home/
+    ├── dagster.yaml
+    └── workspace.yaml

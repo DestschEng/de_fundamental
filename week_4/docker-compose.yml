@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  de_psql:
+    image: postgres:15
+    container_name: de_psql
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    # environment:
+    #   POSTGRES_USER: admin   
+    #   POSTGRES_PASSWORD: admin123  
+    #   POSTGRES_DB: brazil_ecom  
+    #   POSTGRES_HOST_AUTH_METHOD: trust
+    # command: ["postgres", "-c", "log_statement=all"]
+    networks:
+      - de_network
+networks:
+  de_network:
+    driver: bridge
+    name: de_network

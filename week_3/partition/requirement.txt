@@ -1,0 +1,8 @@
+dagster
+dagit
+dagster-postgres
+pyarrow
+minio
+sqlalchemy
+pymysql
+psycopg2-binary
